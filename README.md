@@ -16,3 +16,7 @@ $	python cli-sms.py [API_KEY]	[MOBILE_NUMBER] [MESSAGE]
 
 Get your API-KEY [here](https://www.pushbullet.com/#settings/account)
 
+Demo
+====
+Click [here](http://showterm.io/c07025ed0766b308f3e1b) to catch it in action!
+
