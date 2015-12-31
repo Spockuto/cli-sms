@@ -2,8 +2,11 @@
 import requests
 import json
 import sys
+import os
 
-headers = {'Access-Token' : sys.argv[1]}
+
+API_KEY = os.environ.get('PUSHBULLET_TOKEN')
+headers = {'Access-Token' : API_KEY}
 
 
 print "Getting User Identifier..."
@@ -22,8 +25,8 @@ target_device_iden = str(response['devices'][count]['iden'])
 print "Sending Sms"
 final_data = {}
 data = {}
-data.update({"conversation_iden": "+91"+sys.argv[2]})
-data.update({"message": sys.argv[3]})
+data.update({"conversation_iden": "+91"+sys.argv[1]})
+data.update({"message": sys.argv[2]})
 data.update({"package_name": "com.pushbullet.android"})
 data.update({"source_user_iden": source_user_iden})
 data.update({ "target_device_iden": target_device_iden})

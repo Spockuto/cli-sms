@@ -11,7 +11,13 @@ Pushbullet
 Usage
 =====
 ```sh
-$	python cli-sms.py [API_KEY]	[MOBILE_NUMBER] [MESSAGE]
+$	python cli-sms.py [MOBILE_NUMBER] [MESSAGE]
+```
+
+##Add Access key to your environment
+
+```sh
+$ PUSHBULLET_TOKEN=<your-api-key-with-quotes>
 ```
 
 Get your API-KEY [here](https://www.pushbullet.com/#settings/account)
