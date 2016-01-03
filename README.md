@@ -17,7 +17,7 @@ $	python cli-sms.py [MOBILE_NUMBER] [MESSAGE]
 ##Add Access key to your environment
 
 ```sh
-$ PUSHBULLET_TOKEN=<your-api-key-with-quotes>
+$ export PUSHBULLET_TOKEN=<your-api-key-with-quotes>
 ```
 
 Get your API-KEY [here](https://www.pushbullet.com/#settings/account)
